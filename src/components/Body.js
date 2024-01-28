@@ -6,6 +6,7 @@ import { RouterProvider } from 'react-router-dom'
 
 const Body = () => {
 
+
    const appRouter = createBrowserRouter(
 [
  {
@@ -20,9 +21,7 @@ const Body = () => {
 
 ]
 
-   )
-
-
+   );
 
 
   return (
