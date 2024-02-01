@@ -9,6 +9,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { LOGO, backgroundImg, photoURL } from "../utils/constants";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -42,8 +43,7 @@ const Login = () => {
 
             updateProfile(user, {
               displayName: name.current.value,
-              photoURL:
-                "https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png ",
+              photoURL: photoURL,
             })
               .then(() => {
                 // Profile updated!
@@ -102,7 +102,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/a449fabb-05e4-4c8a-b062-b0bec7d03085/IN-en-20240115-trifectadaily-perspective_alpha_website_small.jpg"
+          src={backgroundImg}
           alt="bg-img"
         />
       </div>
