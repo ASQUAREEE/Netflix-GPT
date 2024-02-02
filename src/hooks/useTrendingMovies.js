@@ -1,6 +1,6 @@
 
 
-import { useDispatch } from "react-redux";
+import { useDispatch} from "react-redux";
 import { addTrendingMovies } from "../utils/moviesSlice";
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
@@ -20,7 +20,7 @@ import { API_OPTIONS } from "../utils/constants";
     }
     
     useEffect(()=>{
-      getPopularMovies()
+     getPopularMovies()
     },[]);
 
 }
